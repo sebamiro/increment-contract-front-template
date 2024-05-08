@@ -6,7 +6,7 @@ import {
 	Contract,
 	Networks,
 	SorobanRpc,
-	Transaction
+	Transaction,
 	TransactionBuilder,
 	BASE_FEE,
 	nativeToScVal,
@@ -15,7 +15,7 @@ import {
 import pkg from '@stellar/freighter-api';
 const {  signTransaction } = pkg;
 
-const contractAddress = "";
+import { contractAddress } from '$lib/contractAddress.js';
 
 const server = new SorobanRpc.Server("https://soroban-testnet.stellar.org");
 const contract = new Contract(contractAddress);
